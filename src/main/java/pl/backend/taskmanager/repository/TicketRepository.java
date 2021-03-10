@@ -1,7 +1,7 @@
 package pl.backend.taskmanager.repository;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import pl.backend.taskmanager.model.Ticket;
 
-public interface TicketRepository extends CrudRepository<Ticket, Long> {
+public interface TicketRepository extends JpaRepository<Ticket, Long> {
 }
