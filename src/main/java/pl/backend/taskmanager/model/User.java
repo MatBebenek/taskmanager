@@ -6,6 +6,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
+@Table(name = "users")
 public class User {
 
     @Id
@@ -23,7 +24,7 @@ public class User {
     private User reportingTo;
 
     @OneToMany
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "users_id")
     private Set<User> subordinates  = new HashSet<>();
 
     @OneToMany
